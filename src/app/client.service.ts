@@ -11,7 +11,7 @@ export class ClientService {
   constructor(private http: HttpClient ) { }
 
   getClients(): Observable<Client[]> {
-      let url = "http://localhost:3000/client";
+      let url = "http://localhost:3000/clients";
       return this.http.get<Client[]>(url);
   }
 }
